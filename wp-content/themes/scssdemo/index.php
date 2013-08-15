@@ -25,7 +25,6 @@
 			
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
-		<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo_rss('name'); ?>" href="<?php bloginfo_rss('atom_url') ?>">
 		
@@ -72,7 +71,7 @@
 				<header id="top" class="clearfix">
 					<div class="title">
 						<a href="<?php echo home_url(); ?>" class="logo">
-							<img src="<?php bloginfo('template_directory'); ?>/imgs/logo.png" alt="WealthBar" />
+							<img src="<?php bloginfo('template_directory'); ?>/imgs/logo.png" alt="logo" />
 						</a>
 					
 						<span class='description'><?php bloginfo('description'); ?></span>
@@ -158,7 +157,10 @@
 						</section>
 						
 					</nav>
-					<section><p><?php echo $about; ?></p></section>
+
+					<section>
+						<p><?php bloginfo('description'); ?></p>
+					</section>
 					
 				</footer>
 				

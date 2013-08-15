@@ -141,13 +141,13 @@ footer a {
 /* = typography ----------------------- */
 
 ::-moz-selection {
-  background: #098aae;
+  background: #168eba;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #098aae;
+  background: #168eba;
   color: #fff;
   text-shadow: none;
 }
@@ -160,7 +160,7 @@ h3#comments { margin-top: 3rem; }
 h4.cat-title { color: #999; }
 
 a {
-  color: #098aae;
+  color: #168eba;
   -webkit-transition: color 0.6s ease;
   -moz-transition: color 0.6s ease;
   transition: color 0.6s ease;
@@ -180,7 +180,7 @@ section img {
 blockquote {
   margin: 0 0 1.5rem 0;
   padding: 0 1.5rem;
-  border-left: 2px solid #098aae;
+  border-left: 2px solid #168eba;
 }
 
 cite { font-style: normal; }
@@ -251,12 +251,12 @@ article .searchterm {
   transition: all 0.6s ease;
 }
 .button:hover, .buttonalt:hover, .wrapalt a:hover, .buttonwrap a:hover, #pagi a:hover {
-  background: #098aae;
+  background: #168eba;
   color: #fff;
 }
 
 .buttonalt, .wrapalt a {
-  background: #098aae;
+  background: #168eba;
   color: #fff;
 }
 .buttonalt:hover, .wrapalt a:hover {
