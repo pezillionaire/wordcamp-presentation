@@ -1,0 +1,17 @@
+/*!
+Theme Name: SCSS Demo Theme
+Theme URI: 
+Version: 0.1
+Description: Demo for WordCamp
+Author: Andrew 'Pez' Pengelly
+Author URI: pezillionaire.com
+
+License: GNU General Public License
+License URI: /_/license.txt
+
+Tags: one-column, fixed-width, light, right-sidebar, flexible-width, custom-menu, featured-images, theme-options
+*/
+
+@import "css/normalize.css";
+@import "css/typeplate.css";
+@import "css/main.css";

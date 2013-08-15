@@ -1,0 +1,454 @@
+/* = structure ----------------------- */
+
+html, body { height: 100%; }
+
+header {
+  margin: 0 auto;
+  max-width: 40em;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #e5e5e5;
+  font-family: "Open Sans", sans-serif;
+  color: #999;
+}
+
+section {
+  margin: 3rem auto 0 auto;
+  max-width: 40em;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+article { margin-bottom: 3rem; }
+
+footer {
+  padding: 0 1rem 1rem;
+  background: #f5f5f5;
+  color: #666;
+}
+footer section {
+  margin: 0 auto;
+  padding: 0;
+}
+footer nav { padding: 1rem 0 1rem; }
+footer nav section {
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+#container {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+#navwrap {
+  position: absolute;
+  top: 0;
+  right: -13.1em;
+  overflow: hidden;
+  z-index: 999999;
+  width: 13em;
+  background-color: #222;
+  color: #fff;
+  min-height: 100%;
+  padding: 1rem 0 0;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  -webkit-transition: right 0.25s ease-in;
+  -moz-transition: right 0.25s ease-in;
+  transition: right 0.25s ease-in;
+}
+#navwrap.sidebar {
+  right: 0px;
+  -webkit-transition: right 0.25s ease-out;
+  -moz-transition: right 0.25s ease-out;
+  transition: right 0.25s ease-out;
+}
+
+#page {
+  position: relative;
+  min-height: 100%;
+  margin-right: 0px;
+  overflow: hidden;
+  background: #fff;
+  -webkit-transition: margin-right 0.2s ease-out;
+  -moz-transition: margin-right 0.2s ease-out;
+  transition: margin-right 0.2s ease-out;
+}
+
+/* = navigation ----------------------- */
+.title {
+  display: block;
+  float: left;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: 52px;
+}
+
+.description {
+  display: block;
+  text-align: center;
+  font-size: 65%;
+}
+
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 65%;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 1rem 0.5rem;
+}
+
+#navwrap {
+  text-align: left;
+  line-height: 1;
+}
+#navwrap a { text-decoration: none; }
+#navwrap a:hover { color: #666; }
+#navwrap ul {
+  display: block;
+  margin: 0;
+  padding: 0 0.75rem;
+}
+#navwrap li a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+}
+
+#nav { margin-top: 1rem; }
+#nav a { color: #fff; }
+
+#postnav {
+  margin-top: 1rem;
+}
+
+#snav { margin-top: 1rem; }
+#snav li { font-size: 65%; }
+#snav a { olor: #fff; }
+
+footer a {
+  text-decoration: none;
+}
+
+/* = typography ----------------------- */
+
+::-moz-selection {
+  background: #098aae;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #098aae;
+  color: #fff;
+  text-shadow: none;
+}
+
+h1 a, h2 a { color: #323a3a; }
+h1 a:hover, h2 a:hover { color: #666; }
+
+h3#comments { margin-top: 3rem; }
+
+h4.cat-title { color: #999; }
+
+a {
+  color: #098aae;
+  -webkit-transition: color 0.6s ease;
+  -moz-transition: color 0.6s ease;
+  transition: color 0.6s ease;
+}
+a:hover { color: #111; }
+
+img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+section img {
+  margin-bottom: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+blockquote {
+  margin: 0 0 1.5rem 0;
+  padding: 0 1.5rem;
+  border-left: 2px solid #098aae;
+}
+
+cite { font-style: normal; }
+
+pre {
+  color: #fff;
+  background: #222;
+  border-radius: 0.25rem;
+}
+
+hr {
+  border-top: 2px solid #ccc;
+  height: 2px;
+  margin-bottom: 1.5rem;
+}
+
+footer h4 {
+  margin: 0;
+  padding: 0.5rem 0;
+  color: #999;
+  text-transform: uppercase;
+}
+footer ul { font-family: "Open Sans", sans-serif; }
+footer small a { color: #666; }
+footer a:hover { color: #ccc; }
+footer p { color: #666; }
+
+article ul, article ol { margin: auto auto 1.5em; }
+article p ul, article p ol { margin: auto; }
+article ul li { list-style: circle inside; }
+article ol li { list-style: decimal inside; }
+article p img { margin: 0; }
+article blockquote p {
+  padding: 0;
+  font-style: italic;
+}
+article .searchterm {
+  padding: 0 0.25rem 0.25rem 0.25rem;
+  border-radius: 0.25rem;
+  background: #cde7ee;
+}
+
+.wp-caption img { margin-bottom: 0.25rem; }
+
+.thumb img {
+  float: right;
+  margin: 0 0 0.5rem 0.5rem;
+  border-radius: 50px;
+  width: 50px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.button, .buttonalt, .wrapalt a, .buttonwrap a, #pagi a {
+  margin: 0 0.25rem 0.25rem 0;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+  background: #f5f5f5;
+  color: #666;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 65%;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.button:hover, .buttonalt:hover, .wrapalt a:hover, .buttonwrap a:hover, #pagi a:hover {
+  background: #098aae;
+  color: #fff;
+}
+
+.buttonalt, .wrapalt a {
+  background: #098aae;
+  color: #fff;
+}
+.buttonalt:hover, .wrapalt a:hover {
+  background: #f5f5f5;
+  color: #666;
+}
+
+.post-edit-link {
+  color: #ccc;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.more {
+  margin-top: -0.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+.more a { text-decoration: none; }
+
+/* = forms ----------------------- */
+#navwrap form {
+  margin: 1rem 0.75rem 0 0.75rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: #333;
+}
+#navwrap input {
+  background: transparent;
+  color: #fff;
+  font-size: 65%;
+}
+
+article input, article textarea {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 65%;
+  max-width: 90%;
+}
+
+article input[type="submit"] {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: #55dbb5;
+  color: #fff;
+}
+
+article label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 65%;
+}
+
+input::-webkit-input-placeholder {
+  color: #666;
+}
+input:-moz-placeholder {
+  color: #666;
+}
+input::-moz-placeholder {
+  color: #666;
+}
+input:-ms-input-placeholder {
+  color: #666;
+}
+
+/* = common ----------------------- */
+.alignleft {
+  position: relative;
+  float: left;
+  text-align: left;
+  margin: 0 1rem 1rem 0;
+}
+
+.alignright {
+  position: relative;
+  float: right;
+  text-align: right;
+  margin: 0 0 1rem 1rem;
+}
+
+.aligncenter {
+  clear: both;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.wp-caption-text {
+  font-size: 65%;
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+}
+
+.meta {
+  width: 100%;
+}
+
+.cat-list {
+  margin-top: 0.5rem;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 65%;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+}
+
+.cat-list a {
+  color: #666;
+}
+
+/* = comments ----------------------- */
+/* = media queries ----------------------- */
+@media screen and (min-width: 55em) {
+  #navwrap {
+    right: 0;
+    padding: 2rem 0 0;
+    box-shadow: none;
+  }
+
+  #page {
+    margin-right: 13em;
+  }
+
+  .x, .toggle {
+    display: none;
+  }
+
+  header {
+    padding: 3rem 2rem 1rem;
+  }
+
+  section {
+    padding: 0 2rem;
+  }
+
+  article ul li {
+    list-style: circle outside;
+  }
+  article ol li {
+    list-style: decimal outside;
+  }
+
+  .logo {
+    width: 250px;
+    height: 87px;
+  }
+
+  .description {
+    font-size: 100%;
+  }
+
+  footer {
+    padding: 0 2rem 1rem;
+  }
+
+  .thumb img {
+    margin: 0 0 1.5rem 1.5rem;
+    border-radius: 100px;
+    width: 100px;
+  }
+}
+/* = print ----------------------- */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: black;
+    font: 13pt Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+  }
+
+  section.post-content a:after {
+    content: " (" attr(href) ")";
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    border: 0;
+  }
+
+  nav, aside {
+    display: none;
+  }
+}
+/* = add custom code here ----------------------- */
