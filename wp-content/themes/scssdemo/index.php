@@ -51,24 +51,24 @@
 
 				<nav id="postnav">
 
+					<h4>Pages</h4>
+					<ul><?php wp_list_pages('title_li='); ?></ul>
 
-					<ul> <?php wp_list_pages('title_li='); ?></ul>
-
+					<h4>Recent Posts</h4>
 					<ul>
-						<?php wp_reset_query(); query_posts('showposts=5'.$popular); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+						<?php wp_reset_query(); query_posts('showposts=3'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 						<?php endwhile; else: endif; wp_reset_query(); ?>
 					</ul>
 
 				</nav>
-				<?php wp_nav_menu( array( 'theme_location' => 'social', 'container_id' => 'snav', 'container' => 'nav', 'depth' => 1 ) ); ?>
 
 
 			</div><!-- navwrap -->
 
 			<div id="page">
 				
-				<header id="top" class="clearfix">
+				<header>
 					<div class="title">
 						<a href="<?php echo home_url(); ?>" class="logo">
 							<img src="<?php bloginfo('template_directory'); ?>/imgs/logo.png" alt="logo" />
@@ -158,9 +158,7 @@
 						
 					</nav>
 
-					<section>
-						<p><?php bloginfo('description'); ?></p>
-					</section>
+					<p><?php bloginfo('description'); ?></p>
 					
 				</footer>
 				

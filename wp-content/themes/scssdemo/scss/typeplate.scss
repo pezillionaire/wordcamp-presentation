@@ -36,13 +36,13 @@
 
 
 
-$font-weight: normal !default;
-$line-height: 1.65 !default;
-$font-size: 112.5 !default; // percentage value (16 * 112.5% = 18px)
-$font-base: 16 * ($font-size/100) !default; // converts our percentage to a pixel value
+// $font-weight: normal !default;
+// $line-height: 1.65 !default;
+// $font-size: 112.5 !default; // percentage value (16 * 112.5% = 18px)
+// $font-base: 16 * ($font-size/100) !default; // converts our percentage to a pixel value
 $measure: $font-base * $line-height;
-$font-family: 'Droid Serif', georgia, serif;
-$font-family-sans: 'Open Sans', sans-serif;
+// $font-family: 'Droid Serif', georgia, serif;
+// $font-family-sans: 'Open Sans', sans-serif;
 $font-properties: $font-weight, $line-height, $font-size, $font-family;
 
 //the serif boolean var can be redeclared from another stylesheet. However
@@ -58,8 +58,8 @@ $small-print-size: 65% !default;
 // $Variable $Base-Color
 // -------------------------------------//
 
-$body-copy-color: #666 !default;
-$heading-color: #323a3a !default;
+$body-copy-color: $darkgrey !default;
+$heading-color: $black !default;
 
 
 // $Variable $Ampersand
@@ -127,7 +127,7 @@ $spacing-x6: ($base-spacing-val*6)#{$type-scale-unit-value} !default;
 
 $pull-quote-fontsize: 4em !default;
 $pull-quote-opacity: 0.5 !default;
-$pull-quote-color: #dc976e !default;
+$pull-quote-color: $darkcolour !default;
 
 
 // $Variable $Citation
@@ -141,7 +141,7 @@ $cite-font-size: inherit !default;
 // $Variable $Small-Caps
 // -------------------------------------//
 
-$small-caps-color: gray !default;
+$small-caps-color: $grey !default;
 $small-caps-weight: 600 !default;
 
 

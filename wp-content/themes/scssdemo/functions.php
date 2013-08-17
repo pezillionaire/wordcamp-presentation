@@ -48,13 +48,6 @@ function theme_styles() {
 
 add_action('wp_enqueue_scripts', 'theme_styles');
 
-// Enables SASS to CSS automatic generation
-// function generate_css() {
-//   if(function_exists('wpsass_define_stylesheet'))
-//     wpsass_define_stylesheet("style.scss", "style.css");
-// }
-// add_action( 'after_setup_theme', 'generate_css' );
-
 function highlight_results($text){
 	if(is_search()){
 	$sr = get_query_var('s');

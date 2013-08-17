@@ -12,14 +12,11 @@ License URI: /_/license.txt
 Tags: one-column, fixed-width, light, right-sidebar, flexible-width, custom-menu, featured-images, theme-options
 */
 
-// $wc-colour: #168eba;
 
-// 0d526c
+@import "bourbon";
 
-$main-color: #098aae;
-$dark-colour: #323a3a;
+@import "scss/variables.scss";
 
-// @import "bourbon";
 @import "scss/normalize.scss";
 @import "scss/typeplate.scss";
 @import "scss/main.scss";

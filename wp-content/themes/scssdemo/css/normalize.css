@@ -121,32 +121,76 @@ sup { top: -0.5em; }
 
 sub { bottom: -0.25em; }
 
-img { height: auto; border: 0; vertical-align: middle; -ms-interpolation-mode: bicubic; }
+img {
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
 
 svg:not(:root) { overflow: hidden; }
 
-legend { padding: 0; border: 0; white-space: normal; *margin-left: -7px; }
+legend {
+  padding: 0;
+  border: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
 
-button, input, select, textarea { margin: 0; vertical-align: baseline; font-size: 100%; *vertical-align: middle; line-height: normal !important; }
+button, input, select, textarea {
+  margin: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  *vertical-align: middle;
+  line-height: normal !important;
+}
 
 button, input { line-height: 1; }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button, html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible; }
 
 button[disabled], input[disabled] { cursor: default; }
 
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *height: 13px; *width: 13px; }
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
 
-input[type="search"] { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; -webkit-appearance: textfield; }
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield; }
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+input[type="search"]::-webkit-search-cancel-button,
+ input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
-button::-moz-focus-inner, input[type="submit"]::-moz-focus-inner { border: 0; }
+button::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner { border: 0; }
 
-textarea { overflow: auto; vertical-align: top; }
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
 
-table { border-spacing: 0; border-collapse: collapse; }
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
 
-th { vertical-align: top; text-align: left; }
+th {
+  vertical-align: top;
+  text-align: left;
+}
 
-td { vertical-align: top; text-align: left; }
+td {
+  vertical-align: top;
+  text-align: left;
+}

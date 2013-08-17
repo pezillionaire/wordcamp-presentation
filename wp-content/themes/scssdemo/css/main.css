@@ -1,15 +1,56 @@
-/* = structure ----------------------- */
 
+/* ----- WP Stuff ----- */
+.alignleft {
+  position: relative;
+  float: left;
+  text-align: left;
+  margin: 0 1rem 1rem 0;
+}
+
+.alignright {
+  position: relative;
+  float: right;
+  text-align: right;
+  margin: 0 0 1rem 1rem;
+}
+
+.aligncenter {
+  clear: both;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.wp-caption-text {
+  font-size: 65%;
+  font-family: "Open Sans", sans-serif;
+  color: #666666;
+}
+
+/* ----- structure ----- */
 html, body { height: 100%; }
+
+body {
+  font: normal 112.5%/1.65 "Droid Serif", georgia, serif;
+  color: #999999;
+}
 
 header {
   margin: 0 auto;
   max-width: 40em;
   text-align: left;
   padding: 0.5rem 1rem;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 2px solid whitesmoke;
   font-family: "Open Sans", sans-serif;
   color: #999;
+  *zoom: 1;
+}
+header:before, header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
 }
 
 section {
@@ -19,21 +60,22 @@ section {
   padding: 0 1rem;
 }
 
-article { margin-bottom: 3rem; }
+article {
+  margin-bottom: 3rem;
+}
+
+/* footer */
 
 footer {
   padding: 0 1rem 1rem;
-  background: #f5f5f5;
-  color: #666;
+  background: whitesmoke;
+  border-top: 4px solid #168eba;
+  color: #666666;
 }
 footer section {
-  margin: 0 auto;
-  padding: 0;
-}
-footer nav { padding: 1rem 0 1rem; }
-footer nav section {
-  padding: 0.5rem 0;
-  border-bottom: 2px solid #e5e5e5;
+  margin: 0;
+  padding: 0.5rem 0 1rem;
+  border-bottom: 2px solid #cccccc;
 }
 
 #container {
@@ -72,13 +114,13 @@ footer nav section {
   min-height: 100%;
   margin-right: 0px;
   overflow: hidden;
-  background: #fff;
+  border-top: 4px solid #168eba;
   -webkit-transition: margin-right 0.2s ease-out;
   -moz-transition: margin-right 0.2s ease-out;
   transition: margin-right 0.2s ease-out;
 }
 
-/* = navigation ----------------------- */
+/* ----- site wide navigation ----- */
 .title {
   display: block;
   float: left;
@@ -107,57 +149,56 @@ footer nav section {
   padding: 1rem 0.5rem;
 }
 
+/* sidebar nav */
+
 #navwrap {
   text-align: left;
   line-height: 1;
 }
-#navwrap a { text-decoration: none; }
-#navwrap a:hover { color: #666; }
+#navwrap h4 {
+  color: #fff;
+  padding: 0 0.75rem 0.5rem;
+  margin: 0;
+}
+#navwrap a {
+  text-decoration: none;
+}
 #navwrap ul {
   display: block;
   margin: 0;
-  padding: 0 0.75rem;
+  padding: 0 0.75rem 1rem;
 }
 #navwrap li a {
   display: block;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0;
 }
-
-#nav { margin-top: 1rem; }
-#nav a { color: #fff; }
 
 #postnav {
   margin-top: 1rem;
 }
 
-#snav { margin-top: 1rem; }
-#snav li { font-size: 65%; }
-#snav a { olor: #fff; }
+/* ----- custom typography ------ */
 
-footer a {
-  text-decoration: none;
+h1 a, h2 a {
+  color: #3d3d3d;
+}
+h1 a:hover, h2 a:hover {
+  color: #666666;
 }
 
-/* = typography ----------------------- */
+h3#comments {
+  margin-top: 3rem;
+}
 
-::-moz-selection {
+h4.cat-title {
+  color: #999999;
+}
+
+::-moz-selection, ::selection {
   background: #168eba;
   color: #fff;
   text-shadow: none;
 }
-
-::selection {
-  background: #168eba;
-  color: #fff;
-  text-shadow: none;
-}
-
-h1 a, h2 a { color: #323a3a; }
-h1 a:hover, h2 a:hover { color: #666; }
-
-h3#comments { margin-top: 3rem; }
-
-h4.cat-title { color: #999; }
 
 a {
   color: #168eba;
@@ -165,7 +206,9 @@ a {
   -moz-transition: color 0.6s ease;
   transition: color 0.6s ease;
 }
-a:hover { color: #111; }
+a:hover {
+  color: #08384a;
+}
 
 img {
   max-width: 100% !important;
@@ -183,36 +226,58 @@ blockquote {
   border-left: 2px solid #168eba;
 }
 
-cite { font-style: normal; }
+cite {
+  font-style: normal;
+}
 
 pre {
   color: #fff;
-  background: #222;
+  background: #3d3d3d;
   border-radius: 0.25rem;
 }
 
 hr {
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #cccccc;
   height: 2px;
   margin-bottom: 1.5rem;
 }
 
+/* footer */
 footer h4 {
   margin: 0;
   padding: 0.5rem 0;
-  color: #999;
+  color: #999999;
   text-transform: uppercase;
 }
-footer ul { font-family: "Open Sans", sans-serif; }
-footer small a { color: #666; }
-footer a:hover { color: #ccc; }
-footer p { color: #666; }
+footer ul {
+  font-family: "Open Sans", sans-serif;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: #cccccc;
+}
+footer p {
+  color: #999999;
+}
 
-article ul, article ol { margin: auto auto 1.5em; }
-article p ul, article p ol { margin: auto; }
-article ul li { list-style: circle inside; }
-article ol li { list-style: decimal inside; }
-article p img { margin: 0; }
+/* article */
+article ul, article ol {
+  margin: auto auto 1.5em;
+}
+article p ul, article p ol {
+  margin: auto;
+}
+article ul li {
+  list-style: circle inside;
+}
+article ol li {
+  list-style: decimal inside;
+}
+article p img {
+  margin: 0;
+}
 article blockquote p {
   padding: 0;
   font-style: italic;
@@ -220,10 +285,12 @@ article blockquote p {
 article .searchterm {
   padding: 0 0.25rem 0.25rem 0.25rem;
   border-radius: 0.25rem;
-  background: #cde7ee;
+  background: #d0e8f1;
 }
 
-.wp-caption img { margin-bottom: 0.25rem; }
+.wp-caption img {
+  margin-bottom: 0.25rem;
+}
 
 .thumb img {
   float: right;
@@ -235,37 +302,8 @@ article .searchterm {
   transition: all 0.25s ease;
 }
 
-.button, .buttonalt, .wrapalt a, .buttonwrap a, #pagi a {
-  margin: 0 0.25rem 0.25rem 0;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.25rem;
-  background: #f5f5f5;
-  color: #666;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 65%;
-  font-family: "Open Sans", sans-serif;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.button:hover, .buttonalt:hover, .wrapalt a:hover, .buttonwrap a:hover, #pagi a:hover {
-  background: #168eba;
-  color: #fff;
-}
-
-.buttonalt, .wrapalt a {
-  background: #168eba;
-  color: #fff;
-}
-.buttonalt:hover, .wrapalt a:hover {
-  background: #f5f5f5;
-  color: #666;
-}
-
 .post-edit-link {
-  color: #ccc;
+  color: #cccccc;
   font-weight: 400;
   text-decoration: none;
 }
@@ -274,9 +312,11 @@ article .searchterm {
   margin-top: -0.5rem;
   font-family: "Open Sans", sans-serif;
 }
-.more a { text-decoration: none; }
+.more a {
+  text-decoration: none;
+}
 
-/* = forms ----------------------- */
+/* ----- forms ----- */
 #navwrap form {
   margin: 1rem 0.75rem 0 0.75rem;
   padding: 0.5rem;
@@ -289,87 +329,8 @@ article .searchterm {
   font-size: 65%;
 }
 
-article input, article textarea {
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  background: #f5f5f5;
-  font-family: "Open Sans", sans-serif;
-  font-size: 65%;
-  max-width: 90%;
-}
+/* ----- media queries ----- */
 
-article input[type="submit"] {
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  background: #55dbb5;
-  color: #fff;
-}
-
-article label {
-  font-family: "Open Sans", sans-serif;
-  font-size: 65%;
-}
-
-input::-webkit-input-placeholder {
-  color: #666;
-}
-input:-moz-placeholder {
-  color: #666;
-}
-input::-moz-placeholder {
-  color: #666;
-}
-input:-ms-input-placeholder {
-  color: #666;
-}
-
-/* = common ----------------------- */
-.alignleft {
-  position: relative;
-  float: left;
-  text-align: left;
-  margin: 0 1rem 1rem 0;
-}
-
-.alignright {
-  position: relative;
-  float: right;
-  text-align: right;
-  margin: 0 0 1rem 1rem;
-}
-
-.aligncenter {
-  clear: both;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.wp-caption-text {
-  font-size: 65%;
-  font-family: "Open Sans", sans-serif;
-  color: #666;
-}
-
-.meta {
-  width: 100%;
-}
-
-.cat-list {
-  margin-top: 0.5rem;
-  color: #999;
-  text-transform: uppercase;
-  font-size: 65%;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1;
-}
-
-.cat-list a {
-  color: #666;
-}
-
-/* = comments ----------------------- */
-/* = media queries ----------------------- */
 @media screen and (min-width: 55em) {
   #navwrap {
     right: 0;
@@ -400,11 +361,6 @@ input:-ms-input-placeholder {
     list-style: decimal outside;
   }
 
-  .logo {
-    width: 250px;
-    height: 87px;
-  }
-
   .description {
     font-size: 100%;
   }
@@ -419,36 +375,3 @@ input:-ms-input-placeholder {
     width: 100px;
   }
 }
-/* = print ----------------------- */
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    text-shadow: none !important;
-  }
-
-  body {
-    background: #fff;
-    color: black;
-    font: 13pt Georgia, "Times New Roman", Times, serif;
-    line-height: 1.3;
-  }
-
-  section.post-content a:after {
-    content: " (" attr(href) ")";
-  }
-
-  tr, img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-    border: 0;
-  }
-
-  nav, aside {
-    display: none;
-  }
-}
-/* = add custom code here ----------------------- */
