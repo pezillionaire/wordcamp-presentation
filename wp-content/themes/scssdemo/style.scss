@@ -1,4 +1,4 @@
-/*!
+/*
 Theme Name: SCSS Demo Theme
 Theme URI: 
 Version: 0.1
@@ -12,11 +12,9 @@ License URI: /_/license.txt
 Tags: one-column, fixed-width, light, right-sidebar, flexible-width, custom-menu, featured-images, theme-options
 */
 
-
 @import "bourbon";
 
 @import "scss/variables.scss";
-
 @import "scss/normalize.scss";
 @import "scss/typeplate.scss";
 @import "scss/main.scss";

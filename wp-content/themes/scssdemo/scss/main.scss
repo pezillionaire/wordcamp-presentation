@@ -1,37 +1,42 @@
 // ---- DEMO Stuff ----- //
 
+// --- button @extend demo --- //
 
-// .button {
-// 	background: $maincolor;
-// 	border-radius: 5px;
-// 	box-shadow: 0 2px 0 $darkcolour;
-// 	padding: $spacing-half $spacing;
-// 	color: white;
-// 	text-decoration: none;
-// 	font-family: $font-family-sans;
-// 	&:hover {
-// 		background: $darkcolour;
-// 		box-shadow: 0 2px 0 $black;
-// 	}
-// }
+.button {
+	background: $maincolor;
+	border-radius: 5px;
+	box-shadow: 0 2px 0 $darkcolour;
+	padding: $spacing-half $spacing;
+	color: white;
+	text-decoration: none;
+	font-family: $font-family-sans;
+	&:hover {
+		background: $darkcolour;
+		box-shadow: 0 2px 0 $black;
+	}
+}
 
-// @mixin mybutton($mycolor) {
-// 	background: $mycolor;
-// 	border-radius: 5px;
-// 	box-shadow: 0 2px 0 shade($mycolor, 80%);
-// 	padding: $spacing-half $spacing;
-// 	color: white;
-// 	text-decoration: none;
-//  font-family: $font-family-sans;
-// 	&:hover {
-// 		background: shade($mycolor, 80%);
-// 		box-shadow: 0 2px 0 $black;
-// 	}
-// }
+// .more a { @extend .button; }
 
-// .more a {
-//  	@include mybutton($maincolor);
-// }
+// --- button @mixin demo --- //
+
+@mixin mybutton($mycolor) {
+	background: $mycolor;
+	border-radius: 5px;
+	box-shadow: 0 2px 0 shade($mycolor, 80%);
+	padding: $spacing-half $spacing;
+	color: white;
+	text-decoration: none;
+ font-family: $font-family-sans;
+	&:hover {
+		background: shade($mycolor, 40%);
+		box-shadow: 0 2px 0 $black;
+	}
+}
+
+.more a { @include mybutton($maincolor); }
+
+
 
 
 /* ----- WP Stuff ----- */
@@ -282,14 +287,6 @@ article {
 	color: $litegrey;
 	font-weight: 400;
 	text-decoration: none;
-}
-
-.more {
-	margin-top: -$spacing;
- 	font-family: $font-family-sans;
- 	a {
- 		text-decoration: none;
- 	}
 }
 
 
